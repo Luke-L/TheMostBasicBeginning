@@ -1,10 +1,10 @@
 weight = input("What is your weight? ")
-conv = 2.205
+conv = 0.4535
 
 
 question = input("(K)g or (L)bs? ")
 if question == "K" or question == "k":
-    product = float(weight) * float(conv)
-    print("You weigh " + str(product) + " kgs.")
+    print("You weigh " + str(float(weight) / float(conv)) + " lbs.")
+
 elif question == "L" or question == "l":
-    print("You weigh " + weight + " lbs.")
+    print("You weigh " + str(float(weight) * float(conv)) + " kgs")
